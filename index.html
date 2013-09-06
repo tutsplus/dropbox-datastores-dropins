@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+        <meta charset="UTF-8">
+        
+        <!--[if lt IE 9]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        
+        <link href="css/style.css" rel="stylesheet" media="screen" />
+        
+        <title>NetTuts Dropbox Datastores</title>
+    </head>
+    <body>
+        <div id="wrapper">
+            <h1>TODOs</h1>
+            <p class="saver"><a href="http://dropbox-nettuts.bitslice.net/dropbox-nettuts.zip" class="dropbox-saver"></a></p>
+            <div id="main">
+                <ul id="todos"></ul>
+                <form id="add-todo" method="post">
+                    <input type="text" name="todo" id="todo" placeholder="Enter a new todo..." />
+                    <button id="add-todo" type="submit">Add Todo</button>
+                </form>
+            </div>
+            <button id="link-button">Connect Dropbox</button>
+            <input type="dropbox-chooser" id="dp-chooser" name="selected-file" style="visibility: hidden;" data-link-type="direct" />
+            <p class="image"><img id="selected-image" alt="Dropbox Selected Image" /></p>
+        </div>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="https://www.dropbox.com/static/api/1/dropbox-datastores-0.1.0-b2.js"></script>
+        <script src="https://www.dropbox.com/static/api/1/dropins.js" id="dropboxjs" data-app-key="YOUR_DROPBOX_APP_KEY"></script>
+        <script src="js/test-app.js"></script>
+    </body>
+</html>
